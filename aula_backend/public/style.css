@@ -1,0 +1,54 @@
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  background: #f4f4f5;
+  color: #18181b;
+  line-height: 1.5;
+}
+
+h1 { font-size: 24px; margin: 0 0 4px; }
+h2 { font-size: 17px; margin: 0 0 12px; }
+.subtitulo { color: #71717a; margin: 0 0 24px; }
+
+.cartao { background: white; border: 1px solid #e4e4e7; padding: 28px; }
+
+/* ---------- Página de entrada ---------- */
+.centro { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 16px; }
+.centro .cartao { width: 100%; max-width: 380px; }
+
+label { display: block; font-size: 14px; color: #52525b; margin-bottom: 14px; }
+input {
+  display: block; width: 100%; margin-top: 4px; padding: 10px 12px;
+  font: inherit; border: 1px solid #d4d4d8; background: white;
+}
+input:focus { outline: 2px solid #2563eb; outline-offset: -1px; border-color: #2563eb; }
+
+button { font: inherit; cursor: pointer; border: none; padding: 11px 16px; }
+button[type="submit"] { width: 100%; background: #2563eb; color: white; }
+button[type="submit"]:disabled { opacity: 0.6; cursor: wait; }
+button.link { background: none; color: #2563eb; padding: 0; text-decoration: underline; }
+
+.mensagem { min-height: 1.5em; margin: 0 0 12px; font-size: 14px; color: #b91c1c; }
+.alternar { text-align: center; font-size: 14px; color: #71717a; margin: 20px 0 0; }
+
+/* ---------- Página logada ---------- */
+.topo {
+  background: #18181b; color: white; padding: 12px 16px;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.topo button { background: transparent; color: white; border: 1px solid #52525b; padding: 6px 14px; }
+.topo button:hover { background: #27272a; }
+
+.conteudo { max-width: 640px; margin: 0 auto; padding: 32px 16px; }
+
+dl { display: grid; grid-template-columns: max-content 1fr; gap: 8px 16px; margin: 0; }
+dt { color: #71717a; }
+dd { margin: 0; word-break: break-word; }
+
+@media (max-width: 480px) {
+  dl { grid-template-columns: 1fr; gap: 0; }
+  dd { margin-bottom: 10px; }
+}

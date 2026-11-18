@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Minha área</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔒</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topo">
+    <strong>Minha área</strong>
+    <button type="button" id="botao-sair">Sair</button>
+  </header>
+
+  <main class="conteudo">
+    <p id="carregando">Carregando...</p>
+
+    <section id="area" hidden>
+      <h1 id="saudacao"></h1>
+      <p class="subtitulo">Você está logado. Só quem tem conta consegue ver esta página.</p>
+
+      <div class="cartao">
+        <h2>Seus dados</h2>
+        <dl>
+          <dt>Nome</dt><dd id="dado-nome"></dd>
+          <dt>E-mail</dt><dd id="dado-email"></dd>
+          <dt>Conta criada em</dt><dd id="dado-criado"></dd>
+        </dl>
+      </div>
+    </section>
+  </main>
+
+  <script src="painel.js"></script>
+</body>
+</html>
